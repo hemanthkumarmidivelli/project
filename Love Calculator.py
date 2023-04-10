@@ -17,13 +17,13 @@ def ok():
         v="Self love : 100%   <3"
     else:
         v="{} loves {} ".format(name,lname)+str(random.randrange(50,101))+"%     <3"
-    ans=messagebox.askokcancel("Love Calculator",(v),icon='info')
+    ans=messagebox.askokcancel("Love Calculator <3",(v),icon='info')
     if ans==0:
         root.destroy()
     
     
 root=Tk()
-root.title("Love calculator by kittu")
+root.title("Love calculator <3 by Hemanth kumar")
 root.geometry("600x600")
 root.configure(bg="white")
 
@@ -31,7 +31,7 @@ root.configure(bg="white")
 
 
 
-l=Label(root,text="Love Calculator",bg="white",fg="red",font=("ink free",20))
+l=Label(root,text="Love Calculator <3",bg="white",fg="red",font=("ink free",20))
 l.grid(column=1,row=1)
 
 l1=Label(root,text="Your name",bg="white",fg="black")
