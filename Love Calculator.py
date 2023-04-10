@@ -11,8 +11,15 @@ def ok():
     lname=e2.get()
     name=str(name)
     lname=str(lname)
-    v="{} loves {} ".format(name,lname)+str(random.randrange(50,101))+"%"
-    messagebox.showinfo("Love Calculator",(v))
+    if name=="" or lname=="":
+        v="Name can not be empty"
+    elif name==lname:
+        v="Self love : 100%   <3"
+    else:
+        v="{} loves {} ".format(name,lname)+str(random.randrange(50,101))+"%     <3"
+    ans=messagebox.askokcancel("Love Calculator",(v),icon='info')
+    if ans==0:
+        root.destroy()
     
     
 root=Tk()
