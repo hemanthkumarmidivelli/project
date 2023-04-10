@@ -6,7 +6,7 @@ from tkinter import ttk
 
 
 
-def ok():
+def ok(e1111):
     name=e.get()
     lname=e2.get()
     name=str(name)
@@ -23,7 +23,7 @@ def ok():
     
     
 root=Tk()
-root.title("Love calculator <3 by Hemanth kumar")
+root.title("Love calculator <3 by kittu")
 root.geometry("600x600")
 root.configure(bg="white")
 
@@ -49,4 +49,5 @@ e2.grid(column=1,row=6)
 
 b=Button(root,command=ok,text="Calculate",bg="red",height=1,width=20)
 b.grid(column=1,row=8)
+root.bind('<Return>', ok)
 root.mainloop()
