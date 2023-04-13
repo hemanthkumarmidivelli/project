@@ -17,7 +17,7 @@ def ok(e1111):
         v="Self love : 100%   <3"
     else:
         v="{} loves {} ".format(name,lname)+str(random.randrange(50,101))+"%     <3"
-    ans=messagebox.askokcancel("Love Calculator <3",(v),icon='info')
+    ans=messagebox.askretrycancel("Love Calculator <3",(v),icon='info')
     if ans==0:
         root.destroy()
 def okk():
@@ -31,14 +31,14 @@ def okk():
         v="Self love : 100%   <3"
     else:
         v="{} loves {} ".format(name,lname)+str(random.randrange(50,101))+"%     <3"
-    ans=messagebox.askokcancel("Love Calculator <3",(v),icon='info')
+    ans=messagebox.askretrycancel("Love Calculator <3",(v),icon='info')
     if ans==0:
         root.destroy()
     
     
 root=Tk()
 root.title("Love calculator <3 by kittu")
-root.geometry("100x500")
+root.geometry("300x400")
 root.configure(bg="white")
 
 
